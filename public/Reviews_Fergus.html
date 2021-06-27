@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Google Reviews code from here...-->
+    <link rel="stylesheet" href="/google-places.css" />
+    <!--     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script> -->
+    <!--     https://github.com/peledies/google-places -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/google-places.js "></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyAx-0uzzr-5Hzn-bIzE76Z9a35qJhaxrFk"></script>
+
+    <script>
+      jQuery(document).ready(function() {
+        $("#google-reviews").googlePlaces({
+          placeId: "ChIJQ1BNPQf0K4gRjOXo2PrSO0g",
+          render: ["reviews"],
+          min_rating: 0,
+          max_rows: 0
+        });
+      });
+    </script>
+    <!-- ...to here -->
+
+    <meta charset="utf-8" />
+    <link rel="icon" href="https://cdn.glitch.com/633944d6-0a6c-4645-8450-cce5e30df226%2Ffavicon.png?v=1624722500224" />
+    <link rel="icon" href="https://glitch.com/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Fergus House</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+
+  </head>
+  <body>
+
+    <a href="https://ratemyhousing.glitch.me/"
+      ><h4 style="padding:4%;">
+        <i class="fas fa-chevron-left"></i> Back to Main Page
+      </h4></a
+    >
+
+    <h1 class="res-title">Fergus House Residence</h1>
+    <div class="res-head">
+      <img
+        class="res-image"
+        src="https://image.uhzcdn.com/house/3c/9dc7526c5e720a1d3cc68deb60d8114e6adf20.png?x-oss-process=image/resize,m_fill,w_780,h_438,limit_0/interlace,1/quality,q_90/format,jpg"
+        alt=""
+        width="800"
+        height="400"
+      />
+      <div class="">
+        <h4 class="ammenities">
+          <i class="icon fas fa-graduation-cap"></i>2 Minute Walk to University
+        </h4>
+        <h4 class="ammenities">
+          <i class="icon fas fa-gamepad"></i>Games Room
+        </h4>
+        <h4 class="ammenities">
+          <i class="icon fas fa-video"></i>Movie Lounge
+        </h4>
+        <h4 class="ammenities">
+          <i class="icon fas fa-desktop"></i>Conference Rooms
+        </h4>
+        <h4 class="ammenities">
+          <i class="icon fas fa-tshirt"></i>On Site Laundry Room
+        </h4>
+        <h4 class="ammenities"><i class="icon fas fa-car"></i>Underground Parking</h4>
+        <h4 class="ammenities">
+          <i class="icon fas fa-phone-alt"></i>24 Hour On Call Service and Security
+        </h4>
+      </div>
+      <br />
+    </div>
+
+    <div id="google-reviews"></div>
+    <!--         <h1><span color="black">Submit Your Review</span></h1> -->
+    <h1>
+      <span class="title" style="color:gold;">Submit</span>
+      <span color="black">Your Review</span>
+    </h1>
+    <div class="inputDiv">
+      <input
+        type="text"
+        class="input"
+        placeholder="How would you rate this place?"
+      />
+      <button class="add" onclick="location.href= 'https://ratemyhousing.glitch.me/'"><i class="fas fa-plus"></i></button>
+    </div>
+    <script src="main.js"></script>
+    <div class="container"></div>
+
+       <div class="stars" >
+        <input type="radio" id="five" name="rate" value="5">
+        <label for="five" style="margin-right:31%;"></label>
+        <input type="radio" id="four" name="rate" value="4">
+        <label for="four"></label>
+        <input type="radio" id="three" name="rate" value="3">
+        <label for="three"></label>
+        <input type="radio" id="two" name="rate" value="2">
+        <label for="two"></label>
+        <input type="radio" id="one" name="rate" value="1">
+        <label for="one"></label>
+        <span class="result"></span>
+      </div>
+    <br>
+
+    <script src="main.js"></script>
+
+    <footer>
+      <h4>Contact Us</h4>
+      <div class="icon-class">
+        <a href="#" class="social-icons"
+          ><h3><i class="fab fa-linkedin"></i></h3
+        ></a>
+        <a href="#" class="social-icons"
+          ><h3><i class="fab fa-instagram-square"></i></h3
+        ></a>
+        <a href="#" class="social-icons"
+          ><h3><i class="fab fa-facebook-square"></i></h3
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>
