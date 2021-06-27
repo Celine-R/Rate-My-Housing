@@ -1,0 +1,393 @@
+/******************************************************************************
+START Glitch hello-app default styles
+
+The styles in this section do some minimal CSS resets, set default fonts and 
+colors, and handle the layout for our footer and "Remix on Glitch" button. If
+you're new to CSS they may seem a little complicated, but you can scroll down
+to this section's matching END comment to see page-specific styles.
+******************************************************************************/
+/* Our default values set as CSS variables */
+:root {
+  --color-bg: #BDC9FF;
+  --color-text-main: #000000;
+  --color-primary: #AFECE0;
+  --wrapper-height: 87vh;
+  --image-max-width: 300px;
+  --image-margin: 3rem;
+  --font-family: "HK Grotesk";
+  --font-family-header: "HK Grotesk";
+}
+
+body {
+  font-family: Montserrat;
+}
+
+/* Navbar  */
+.the-navbar {
+  font-weight: bold;
+  background-color: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.btn-outline-success {
+  color: black;
+  background-color: #FFB627;
+  border-color: white;
+  margin-left: 10px;
+}
+
+.btn-outline-success:hover {
+  color: black;
+  background-color: #FFC971;
+  border-color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: gold;
+}
+
+/* Heading  */
+.heading-title {
+  padding-top: 5%;
+  padding-bottom:2%;
+  text-align: center;
+}
+
+.headerpic{
+  max-width: 100%;
+}
+
+/* Cards */
+.wrapper {
+  margin-left: 285px;
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  text-align:center;
+}
+
+.cards {
+  margin: 10%;
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+  border:3px; border-style:solid; border-color:black;
+}
+
+a {
+  color:black;
+}
+
+a:hover {
+  color:gold;
+  text-decoration:none;
+}
+
+/* Footer */
+footer {
+  padding-top: 10%;
+  text-align: center;
+  margin:auto;
+}
+
+/* Reviews page */
+.res-image {
+  padding-left: 5%;
+}
+
+.res-title {
+  text-align:center;
+  padding:2%;
+}
+
+/* Res Pages */
+.res-image {
+  padding-left: 5%;
+  padding-bottom:5%;
+}
+
+.res-title {
+  text-align:center;
+  padding:2%;
+}
+
+.res-head {
+  display:flex;
+}
+
+.ammenities {
+  padding-left: 5%;
+  width: 600px;
+}
+
+.icon {
+  margin-right: 5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Submit Review  */
+
+body{
+    height: 100%;
+    box-sizing: border-box;
+}
+
+h1 {
+	color: black;
+	font-size: 3rem;
+	font-weight: 50;
+	text-align: center;
+	margin: 1rem 0 3rem; 
+	font-family: 'Montserrat';
+}
+
+.title{
+	color: blue;
+	text-transform: uppercase;
+	font-weight: 800;
+}
+
+.inputDiv{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.input{
+    padding: 0.5rem 1rem;
+    height: 50px;
+    border-radius: 25px;
+    width: 350px;
+    margin: 0.25rem;
+    transition: .5s;
+    font-size: 1.15rem;
+}
+
+.add{
+	  outline: none;
+    border: none;
+    height: 50px;
+    border-radius: 25px;
+    width: 50px;
+    background-color: gold;
+    color: black;
+    cursor: pointer;
+    transition: .5s;
+    margin: 0.25rem;
+}
+
+.add:hover{
+	opacity: 0.7;
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-top: 2rem;
+}
+
+.item{
+	padding: 0.5rem;
+	border-bottom: 4px solid #fff;
+	margin-bottom: 1.5rem;
+}
+
+.item_input{
+	background: none;
+	outline: none;
+	border: none;
+	color: #fff;
+	font-size: 1.4rem;
+	width: 245px;
+}
+
+.edit{
+	background: none;
+	outline: none;
+	border: none;
+	color: black;
+	font-size: 1.4rem;
+	font-family: 'Hind', sans-serif;
+	margin: 0 0.5rem;
+	cursor: pointer;
+}
+
+.remove{
+	background: none;
+	outline: none;
+	border: none;
+	color: #E00;
+	font-size: 1.4rem;
+	font-family: 'Hind', sans-serif;
+	cursor: pointer;
+}
+
+/* Social Media Icons */
+
+.icon {
+  margin-right: 5%;
+}
+
+.social-icons {
+  color: grey;
+  padding: 2%;
+  display:inline-block;
+}
+
+.social-icons:hover {
+  color: black;
+}
+
+/* Stars */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.stars{
+  text-align: center;
+  margin:auto;
+  align:center;
+
+}
+.stars input{
+  display: none;
+}
+.stars label{
+  float:right;
+  font-size: 100px;
+  color: lightgrey;
+  margin: 0 5px 5px;
+  text-shadow: 1px 1px #bbb;
+}
+.stars label:before{
+  content: '★';
+}
+.stars input:checked ~ label{
+  color: gold;
+  text-shadow: 1px 1px #c60;
+}
+.stars:not(:checked) > label:hover,
+.stars:not(:checked) > label:hover ~ label{
+  color: gold;
+}
+.stars input:checked > label:hover,
+.stars input:checked > label:hover ~ label{
+  color: gold;
+  text-shadow: 1px 1px goldenrod;
+}
+.stars .result:before{
+  position: absolute;
+  content: "";
+  width: 100%;
+  left: 50%;
+  transform: translateX(-47%);
+  bottom: -30px;
+  font-size: 30px;
+  font-weight: 500;
+  color: gold;
+  font-family: 'Poppins', sans-serif;
+  display: none;
+}
+.stars input:checked ~ .result:before{
+  display: block;
+}
+.stars #five:checked ~ .result:before{
+  content: "I love it ";
+}
+.stars #four:checked ~ .result:before{
+  content: "I like it ";
+}
+.stars #three:checked ~ .result:before{
+  content: "It's good ";
+}
+.stars #two:checked ~ .result:before{
+  content: "I don't like it ";
+}
+.stars #one:checked ~ .result:before{
+  content: "I hate it ";
+}
+
+
+
+slidershow{
+  width: 700px;
+  height: 400px;
+  overflow: hidden;
+  background-color:black;
+}
+.middle{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.navigation2{
+  position:absolute;
+  bottom:20px;
+  left:50%;
+  transform: translateX(-50%);
+  display:flex;
+}
+.bar{
+  width: 50px;
+  height: 10px;
+  border: 2px solid white;
+  margin: 6px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.bar:hover{
+  background: #fff;
+}
+
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides{
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+
+.slide{
+  width: 20%;
+  transition: 0.6s;
+}
+.slide img{
+  width: 100%;
+  height: 100%;
+}
+#r1:checked ~ .s1{
+  margin-left: 0;
+}
+#r2:checked ~ .s1{
+  margin-left: -20%;
+}
+#r3:checked ~ .s1{
+  margin-left: -40%;
+}
+#r4:checked ~ .s1{
+  margin-left: -60%;
+}
+#r5:checked ~ .s1{
+  margin-left: -80%;
+}
+.space{
+  height:550px;
+}
+
+
